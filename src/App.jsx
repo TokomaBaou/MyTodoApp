@@ -6,14 +6,14 @@ const App = () => {
       <div className="top-wrapper">
         <p>本日のTODO</p>
         <button>+</button>
-        <input  placeholder="TODOを入力"/>
+        <input placeholder="TODOを入力" />
       </div>
 
       <div className="main-wrapper">
         <section className="incomplete-area">
           <p className="title">本日の未完了タスク</p>
-          <div >
-            <ul　className="list-row">
+          <div>
+            <ul className="list-row">
               <li>ああああ</li>
               <button>完了</button>
               <button>削除</button>
@@ -23,8 +23,8 @@ const App = () => {
 
         <section className="complete-area">
           <p className="title">本日の完了タスク</p>
-          <div >
-            <ul　className="list-row">
+          <div>
+            <ul className="list-row">
               <li>ああああ</li>
               <button>戻す</button>
             </ul>
@@ -35,8 +35,8 @@ const App = () => {
           <p className="title">習慣リスト</p>
           <div>
             <button>+</button>
-            <input/>
-            <ul　className="list-row">
+            <input placeholder="習慣を入力" />
+            <ul className="list-row">
               <li>歯を磨く</li>
 
               <p>0</p>
