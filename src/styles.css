@@ -1,4 +1,96 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-color: #f9f9f9;
+}
+
+input {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
+  background-color: rgb(248, 248, 248);
+  width: 120px;
+}
+
+button {
+  border-radius: 30px;
+  border: none;
+  padding: 4px 16px;
+  margin: 0 10px;
+  font-size: 9px;
+}
+
+button:hover {
+  background-color: #fff27f;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  margin-right: 8px;
+  list-style: none;
+}
+
+.top-wrapper {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  color: #666;
+  font-size: 24px;
+}
+
+.input-area {
+  background-color: #c1ffff;
+  width: 400px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.main-wrapper {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.incomplete-area {
+  background-color: #cdf0ea;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete-area {
+  background-color: #f6c6ea;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.habit-area {
+  background-color: #c490e4;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
 }
