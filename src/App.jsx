@@ -11,6 +11,7 @@ const App = () => {
   const [completeTodos, setCompleteTodos] = useState([]);
   const [habitText, setHabitText] = useState("");
   const [habitLists, setHabitLists] = useState([]);
+  const [num, setNum] = useState(0);
 
   const onChangeText = (event) => setTodoText(event.target.value);
 
@@ -58,6 +59,11 @@ const App = () => {
     setHabitText("");
   };
 
+  const onClickCountUp = (index) => {
+    setNum(num + 1);
+
+    alert("カウントされました");
+  };
   return (
     <>
       <InputTodo
@@ -75,8 +81,10 @@ const App = () => {
         <HabitList
           habitText={habitText}
           todos={habitLists}
-          onClick={onClickAddhabit}
+          onClickAdd={onClickAddhabit}
           onChange={onChangeHabitText}
+          onClickCount={onClickCountUp}
+          num={num}
         />
       </div>
     </>
