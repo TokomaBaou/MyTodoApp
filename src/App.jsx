@@ -60,7 +60,8 @@ const App = () => {
   };
 
   const onClickCountUp = (index) => {
-    setNum(num + 1);
+    const newCount = [...habitLists, num[index]];
+    setNum(newCount, num + 1);
 
     alert("カウントされました");
   };
