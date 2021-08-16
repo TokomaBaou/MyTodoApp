@@ -8,13 +8,14 @@ const style = {
   // alignItems: "center",
 };
 
-export const InputTodo = () => {
+export const InputTodo = (props) => {
+  const { todoText, onClick, onChange } = props;
   return (
     <div className="top-wrapper">
       <p>本日のTODO</p>
       <div style={style}>
-        <button>+</button>
-        <input placeholder="TODOを入力" />
+        <button onClick={onClick}>+</button>
+        <input placeholder="TODOを入力" value={todoText} onChange={onChange} />
       </div>
     </div>
   );
