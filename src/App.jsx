@@ -74,7 +74,7 @@ const App = () => {
         <CompleteTodo todos={completeTodos} onClickBack={onClickBack} />
         <HabitList
           habitText={habitText}
-          habitLists={habitLists}
+          todos={habitLists}
           onClick={onClickAddhabit}
           onChange={onChangeHabitText}
         />
