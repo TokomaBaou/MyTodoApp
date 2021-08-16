@@ -9,6 +9,7 @@ const App = () => {
   const [todoText, setTodoText] = useState("");
   const [incompleteTodos, setIncompleteTodos] = useState([]);
   const [completeTodos, setCompleteTodos] = useState([]);
+  const [habitText, setHabitText] = useState("");
   const [habitLists, setHabitLists] = useState([]);
 
   const onChangeText = (event) => setTodoText(event.target.value);
@@ -47,6 +48,16 @@ const App = () => {
     setIncompleteTodos(newIncompleteTodos);
   };
 
+  const onChangeHabitText = (event) => setHabitText(event.target.value);
+
+  const onClickAddhabit = () => {
+    if (habitText === "") return;
+    const newHabits = [...habitLists, habitText];
+    setHabitLists(newHabits);
+    // alert(habitText);
+    setHabitText("");
+  };
+
   return (
     <>
       <InputTodo
@@ -61,7 +72,12 @@ const App = () => {
           onClickComplete={onClickComplete}
         />
         <CompleteTodo todos={completeTodos} onClickBack={onClickBack} />
-        <HabitList />
+        <HabitList
+          habitText={habitText}
+          habitLists={habitLists}
+          onClick={onClickAddhabit}
+          onChange={onChangeHabitText}
+        />
       </div>
     </>
   );
