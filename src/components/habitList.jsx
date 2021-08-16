@@ -15,7 +15,9 @@ export const HabitList = (props) => {
               <ul className="list-row">
                 <li>{todos}</li>
                 <p>{num}</p>
-                <button onClick={() => onClickCount}>カウント</button>
+                <button key={onClickCount} onClick={() => onClickCount}>
+                  カウント
+                </button>
               </ul>
             </>
           );
